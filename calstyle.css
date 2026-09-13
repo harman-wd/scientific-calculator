@@ -1,0 +1,217 @@
+.angle-active {
+    background: rgba(205, 94, 94, 0.35);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.dark {
+    background: radial-gradient(rgba(45, 77, 74, 0.21), rgba(0, 0, 0, 0.8));
+    color: white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.speButon {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+    border-radius: 50px;
+
+    h1 {
+        font-size: 17px;
+    }
+}
+
+.equal {
+    background: radial-gradient(rgba(152, 213, 207, 0.21), rgba(235, 241, 248, 0.8));
+    color: rgb(79, 36, 36);
+}
+
+.main-container {
+    border: solid rgb(126, 176, 119);
+    border-width: 2px 0px 2px 0px;
+    border-radius: 15px;
+    width: 42%;
+}
+
+.special-key {
+    display: none;
+    text-align: center;
+}
+
+.dropdown {
+    position: absolute;
+    padding-top: 18px;
+    display: none;
+    right: 5px;
+
+    h3 {
+        font-size: 19px;
+        border: 1px solid white;
+        padding: 5px;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+
+
+}
+
+.more-button:hover .dropdown {
+    display: block !important;
+}
+
+.more-button:hover .fa-ellipsis {
+    transform: rotate(90deg);
+    padding: 8px 0px;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-container {
+    padding: 30px 0px;
+}
+
+.toggle-area {
+    border-bottom: 1px solid gray;
+    padding: 8px 0px;
+    position: relative;
+}
+
+.buttons {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0px 5px 0px;
+    border-radius: 50px;
+
+    .backspace {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 17px;
+    }
+}
+
+.buttons:active {
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.7) !important;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        font-size: 15px;
+    }
+}
+
+.heading-style {
+    border: 1px solid white;
+    padding: 7px 15px 0px 15px;
+    border-radius: 15px;
+    margin: 5px 0px;
+
+    h3:hover {
+        transform: rotateY(360deg);
+        transition: 0.9s ease-in-out;
+    }
+}
+
+
+.theme-change {
+    display: flex;
+    align-items: center;
+}
+
+.theme-style {
+    border: 1px solid white;
+    display: flex;
+    gap: 9px;
+    border-radius: 15px;
+}
+
+.sun-icon {
+    padding: 4px 14px;
+    border-radius: 15px;
+}
+
+.fa-sun:hover {
+    transform: rotateX(360deg);
+    transition: 0.6s ease-in-out;
+}
+
+.fa-moon:hover {
+    transform: rotateX(360deg);
+    transition: 0.6s ease-in-out;
+}
+
+.moon-icon {
+    padding: 4px 14px;
+    border-radius: 15px;
+}
+
+.highlight {
+    background: radial-gradient(rgb(155, 153, 153), rgba(52, 125, 137, 0.5));
+}
+
+
+
+.history-button {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.more-button {
+    border: 1px solid white;
+    padding: 0px 8px;
+    border-radius: 15px;
+}
+
+.icon {
+    font-size: 15px;
+}
+
+.buttons-hero {
+    border-top: 1px solid white;
+    padding: 8px 0px 25px 0px;
+}
+
+#display {
+    text-align: right;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    font-size: 35px;
+    width: 100%;
+    min-height: 45px;
+}
+
+#answer {
+    font-size: 25px;
+    width: 100%;
+    min-height: 35px;
+    text-align: right;
+}
+
+@media screen and (max-width:767px) {
+
+    .main-container {
+        width: 100%;
+    }
+
+    .hero-container {
+        padding: 0px 0px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:820px) {
+
+    .main-container {
+        width: 70%;
+    }
+}
